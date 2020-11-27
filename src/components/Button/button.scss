@@ -1,0 +1,17 @@
+@import "../../common/vars";
+@import "../../common/mixins";
+
+.button {
+    margin: 8px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: $font-family;
+
+    &_default {
+        background-color: #d5d5d5;
+    }
+    @include for-phone-only {
+        //css only for mobile
+    }
+}
