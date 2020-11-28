@@ -7,9 +7,17 @@
     border-radius: 6px;
     cursor: pointer;
     font-family: $font-family;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
     &_default {
-        background-color: #d5d5d5;
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+    &_default:hover {
+        color: #fff;
+        background-color: #0069d9;
+        border-color: #0062cc;
     }
     @include for-phone-only {
         //css only for mobile
